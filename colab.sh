@@ -16,3 +16,7 @@ else
     echo  already exists..
 fi
 
+echo Updating fastai..
+pip install fastai --upgrade > /dev/null
+
+echo Done.
