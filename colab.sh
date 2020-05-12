@@ -3,8 +3,6 @@
 driveFolder="/content/drive/My Drive/ml/"
 dest="/content/"
 
-echo "$driveFolder$1"
-
 if [ ! -e "$dest$1" ] 
 then
         if [ ! -e "$driveFolder$1" ]; then
@@ -14,6 +12,10 @@ then
         ln -s "$driveFolder$1" "$dest"
 else
     echo  already exists..
+fi
+
+if [ ! -e /content/utilities ]; then
+        ln -s /content/drive/My\ Drive/utilities /content
 fi
 
 echo Updating fastai..
