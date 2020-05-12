@@ -1,6 +1,6 @@
 #!/bin/bash
 
-driveFolder="/content/drive/My Drive/ml"
+driveFolder="/content/drive/My Drive/ml/"
 dest="/content/"
 
 echo "$driveFolder$1"
