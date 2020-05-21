@@ -15,7 +15,8 @@ else
 fi
 
 if [ ! -e /content/utilities ]; then
-        ln -s /content/drive/My\ Drive/utilities /content
+        #ln -s /content/drive/My\ Drive/utilities /content
+        git clone git@github.com:sangeetkar/utilities.git
 fi
 
 echo Updating fastai..
